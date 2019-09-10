@@ -1,24 +1,16 @@
-import Storage from '../models/Storage';
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable linebreak-style */
+import Search from '../models/Search';
 
-const storage = new Storage();
+const storage = new Search();
 
-export const  getSuggestions = async(req,res) =>{
-    console.log('hereeeeeeeeeeeeeeeeeeeeeeeeeeeee');
-    const searchReq = req.params.q;
-    const latitude = req.params.latitude;
-    const longitude = req.params.longitude;
-    // console.log(`searchReq : ${searchReq}`);
-    // console.log(`latitude : ${latitude}`);
-    // console.log(`longitude : ${longitude}`);
-    const alikeCities = await storage.getCity(searchReq,latitude,longitude);
-    console.log(`cities from the controller:${alikeCities} `);
+export const getSuggestions = async (req, res) => {
+  const searchReq = req.params.q;
+  const { latitude } = req.params;
+  const { longitude } = req.params;
 
-    // console.log(`stored cities : ${storage.cities}`);
-    res.status(200).json({
-        suggestions : alikeCities
-    });
-    // res.status(400).json({
-    //     status: res.statusCode,
-    //     // error: error,
-    // });
-}
+  const alikeCities = await storage.retrieveMatchingCities(searchReq, latitude, longitude);
+  res.status(200).json({
+    suggestions: alikeCities,
+  });
+};

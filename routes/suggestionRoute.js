@@ -1,7 +1,7 @@
+/* eslint-disable linebreak-style */
 import express from 'express';
-import { getSuggestions,welcome } from '../controllers/suggestionController';
+import { getSuggestions } from '../controllers/suggestionController';
 
 const router = express.Router();
-console.log('inside the sugggestion route');
-router.get('/:q/:latitude/:longitude',getSuggestions);
+router.get('/:q/:latitude?/:longitude?', getSuggestions);
 export default router;
