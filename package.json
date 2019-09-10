@@ -4,8 +4,7 @@
   "description": "REST API endpoint that provides auto-complete suggestions for large cities.",
   "main": "server.js",
   "scripts": {
-    "start:server": "babel-node -- server.js",
-    "start:draft": "babel-node -- models/Storage.js",
+    "start": "babel-node -- server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
