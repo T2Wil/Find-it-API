@@ -1,0 +1,35 @@
+{
+  "name": "findit",
+  "version": "1.0.0",
+  "description": "REST API endpoint that provides auto-complete suggestions for large cities.",
+  "main": "server.js",
+  "scripts": {
+    "start:server": "babel-node -- server.js",
+    "start:draft": "babel-node -- models/Storage.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ishimwewil005@gmail.com"
+  },
+  "author": "T. William",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "line-reader": "^0.4.0",
+    "nodemon": "^1.19.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "install": "^0.13.0"
+  }
+}
