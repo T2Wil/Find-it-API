@@ -70,6 +70,7 @@ class Search {
       });
       rl.on('close', () => {
         resolve(this.cities.sort((city1, city2) => city2.score - city1.score));
+        this.cities = [];
       });
     });
   }
