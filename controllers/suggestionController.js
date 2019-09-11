@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable linebreak-style */
 import Search from '../models/Search';
