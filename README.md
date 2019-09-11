@@ -13,6 +13,11 @@ REST API endpoint that provides auto-complete suggestions for large cities.
  *NodeJS*  *Express*
  ```
 ``
+### Testing framework and assertion library
+```
+ *Mocha*  *chai*
+ ```
+``
 ### Deployed on
 ```
 Heroku
@@ -26,6 +31,16 @@ Heroku
 After cloning the repo, cd to the base directory then type the command
 ```
 > npm install
+```
+## Run application
+cd to the base directory then type the command
+```
+> npm run start:server
+```
+## Test application
+cd to the base directory then type the command
+```
+> npm run start:test
 ```
 ## Current version
 
