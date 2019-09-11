@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/T2Wil/Find-it-API.svg?branch=develop)](https://travis-ci.org/T2Wil/Find-it-API)
+
 # Find-it-API
 REST API endpoint that provides auto-complete suggestions for large cities.
 
