@@ -37,6 +37,15 @@ cd to the base directory then type the command
 ```
 > npm run start:server
 ```
+open your favorite browser (Recommended: Google chrome)
+make a search by only city name
+```
+> http://localhost:3000/suggestions/cityName
+```
+make a search by city name , latitude and longitude
+```
+> http://localhost:3000/suggestions/cityName/latitude/longitude
+```
 ## Test application
 cd to the base directory then type the command
 ```
