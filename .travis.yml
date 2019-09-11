@@ -6,9 +6,3 @@ cache:
   - node_modules
 script:
   - npm run start:test
-deploy:
-  provider: pages
-  skip_cleanup: true
-  keep_history: true
-  on:
-    branch: develop
