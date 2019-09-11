@@ -9,7 +9,6 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: "vr1KxIMA4HGObMGwTVeaYw"  
   keep_history: true
   on:
     branch: develop
