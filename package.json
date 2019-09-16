@@ -6,7 +6,9 @@
   "scripts": {
     "start:server": "babel-node -- server.js",
     "start:dev": "nodemon --exec babel-node -- server.js",
-    "start:test": "mocha --require @babel/polyfill --require @babel/register tests/*.js --timeout 10000 --exit"
+    "start:test": "mocha --require @babel/polyfill --require @babel/register tests/*.js --timeout 10000 --exit",
+    "coverage": "nyc npm run start:test && nyc report --reporter=text-lcov | coveralls",
+    "showCoverage": "start coverage/server/index.html"
   },
   "repository": {
     "type": "git",
@@ -29,13 +31,15 @@
     "heroku": "^7.29.0",
     "line-reader": "^0.4.0",
     "mocha": "^6.2.0",
-    "nodemon": "^1.19.2"
+    "nodemon": "^1.19.2",
+    "nyc": "^14.1.1"
   },
   "devDependencies": {
     "eslint": "^6.3.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
-    "install": "^0.13.0"
+    "install": "^0.13.0",
+    "coveralls": "^3.0.6"
   },
   "engines": {
     "node": "10.x"
