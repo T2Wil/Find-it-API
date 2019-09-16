@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/T2Wil/Find-it-API.svg?branch=develop)](https://travis-ci.org/T2Wil/Find-it-API)
+[![Coverage Status](https://coveralls.io/repos/github/T2Wil/Find-it-API/badge.svg?branch=develop)](https://coveralls.io/github/T2Wil/Find-it-API?branch=develop)
 # Find-it-API
 REST API endpoint that provides auto-complete suggestions for large cities.
 
